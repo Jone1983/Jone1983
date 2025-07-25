@@ -1,0 +1,32 @@
+name: youtube_shorts_widget
+description: Custom YouTube Shorts widget for FlutterFlow integration
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.10.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # Web view for embedding YouTube videos
+  webview_flutter: ^4.4.4
+  
+  # URL launcher for opening YouTube app
+  url_launcher: ^6.2.4
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+# For FlutterFlow integration, you only need to add these dependencies
+# to your existing FlutterFlow project's pubspec.yaml:
+#
+# dependencies:
+#   webview_flutter: ^4.4.4
+#   url_launcher: ^6.2.4
